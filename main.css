@@ -1,0 +1,155 @@
+.chart {
+    
+    float:left;
+}
+
+#container3{
+    max-height: 600px;
+}
+
+#container4 {
+    max-height: 350px;
+}
+
+#container2 {
+    max-height: 350px;
+}
+
+#piecontainer{
+    max-width: 600px;
+    float:left;
+    
+}
+
+#chartContainer{
+    float:left;
+}
+
+
+
+#title {
+
+    font-family: "Georgia";
+    color: #333;
+    float: left;
+}
+
+#pic {
+    float:left;
+}
+
+#time {
+    font-family: "Georgia";
+    color: #333;
+}
+
+body {background-color:#ece9e6;}
+
+#gas {
+    background-color: #91ED7D;
+}
+
+#wind {
+    background-color: #8085E9;
+}
+
+#distillate {
+    background-color: #434348;
+}
+
+#hydro {
+    background-color: #F7A35C;
+}
+
+#coal {
+    background-color: #7BB5EC;
+}
+#exports {
+    background-color: #F15C80;
+}#pumps {
+    background-color: #E5D354;
+}
+
+#barContainer {
+    float: left;
+    display:none;
+}
+
+.tg-0lax {
+    font-family: "Georgia";
+    color: #333;
+}
+
+
+/* The switch - the box around the slider */
+#switch {
+    margin-left: 260px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+/* </style>
+<!-- http://doc.jsfiddle.net/use/hacks.html#css-panel-hack -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style> */

@@ -1,0 +1,126 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+
+<link rel="stylesheet" href="main.css">
+<div><img id="pic" src="./resources/simpsons.jpg"  height="75" width="150">
+  <h1>SpringField Energy Consumption</h1>
+ </div>
+ <br/>
+ <br/>
+
+
+<div> 
+
+    <div id="container" class="chart">
+        <div id="container3"></div>
+        <div id="container2"></div>
+        <div id="container4"></div>
+    </div>
+    <div id="chartContainer">
+            <div><p id="time">Time:</p></div>
+            <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:black;}
+                .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:black;}
+                .tg .tg-e755{background-color:#c0c0c0;color:#333333;text-align:left;vertical-align:top}
+                .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+                .tg .tg-0lax{ text-align:left;vertical-align:top;font-family: "Times";
+    color: #333;}
+                .tg .tg-y6fn{background-color:#c0c0c0;text-align:left;vertical-align:top}
+                </style>
+                <table class="tg">
+                  <tr>
+                    <th class="tg-0pky"></th>
+                    <th class="tg-0lax">Power<br>MW</th>
+                    <th class="tg-0lax">Contribution<br>to Demend</th>
+                    <th class="tg-0lax">Av. Value<br>$/MWh</th>
+                  </tr>
+                  <tr>
+                    <td class="tg-y6fn">Sources</td>
+                    <td id="source_1" class="tg-y6fn"></td>
+                    <td id="source_2" class="tg-y6fn"></td>
+                    <td id="source_3" class="tg-y6fn"></td>
+                  </tr>
+                  <tr>
+                    <td id="gas" class="tg-0lax">Gas</td>
+                    <td id="gas1" class="tg-0lax"></td>
+                    <td id="gas2" class="tg-0lax"></td>
+                    <td id="gas3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td id="wind" class="tg-0lax">Wind</td>
+                    <td id="wind1" class="tg-0lax"></td>
+                    <td id="wind2" class="tg-0lax"></td>
+                    <td id="wind3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td id="hydro" class="tg-0lax">Hydro</td>
+                    <td id="hydro1" class="tg-0lax"></td>
+                    <td id="hydro2" class="tg-0lax"></td>
+                    <td id="hydro3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td id='distillate' class="tg-0lax">Distillate</td>
+                    <td id="distillate1" class="tg-0lax"></td>
+                    <td id="distillate2" class="tg-0lax"></td>
+                    <td id="distillate3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td id='coal' class="tg-0lax">Black Coal</td>
+                    <td id="coal1" class="tg-0lax"></td>
+                    <td id="coal2" class="tg-0lax"></td>
+                    <td id="coal3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-y6fn">Loads</td>
+                    <td id="loads1" class="tg-y6fn"></td>
+                    <td id="loads2" class="tg-y6fn"></td>
+                    <td id="loads3" class="tg-y6fn"></td>
+                  </tr>
+                  <tr>
+                    <td id='exports' class="tg-0lax">Exports</td>
+                    <td id="Exports1" class="tg-0lax"></td>
+                    <td id="Exports2" class="tg-0lax"></td>
+                    <td id="Exports3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td id='pumps' class="tg-0lax">Pumps</td>
+                    <td id="pumps1" class="tg-0lax"></td>
+                    <td id="pumps2" class="tg-0lax"></td>
+                    <td id="pumps3" class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-e755">Net</td>
+                    <td id="net1" class="tg-e755"></td>
+                    <td id="net2" class="tg-e755"></td>
+                    <td id="net3" class="tg-e755"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-e755">Renewables</td>
+                    <td id="renewables1" class="tg-e755"></td>
+                    <td id="renewables2" class="tg-e755"></td>
+                    <td id="renewables3" class="tg-e755"></td>
+                  </tr>
+                  
+                </table>
+                <br>
+                <div id="switch">
+                  <label class="switch">
+                    <input type="checkbox" onclick="handleClick()">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                
+                <div id="both"> 
+                  <div id="pieContainer"></div>
+                  <div id="barContainer"></div>
+                </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="main.js"></script>
+
